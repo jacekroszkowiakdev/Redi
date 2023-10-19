@@ -9,6 +9,7 @@ Homepage:
 Navigation (Logo/Icon):
 ● Design a navigation bar that includes a logo or an icon.
 ● Use HTML and CSS to create the navigation bar and style it.
+
 Footer/Header:
 ● Create an HTML file for your header and footer (e.g., header.html and footer.html).
 ● Include important information and links in the header and footer.
