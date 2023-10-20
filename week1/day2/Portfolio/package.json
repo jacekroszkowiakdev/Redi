@@ -1,15 +1,5 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Instructions: Follow these steps to complete the assignment:",
-  "main": "scripts.js",
-  "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "tailwindcss": "^3.3.3"
   }
 }
