@@ -4,7 +4,7 @@
   "description": "Instructions: Follow these steps to complete the assignment:",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
   },
   "keywords": [],
   "author": "",
