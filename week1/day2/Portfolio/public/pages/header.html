@@ -21,27 +21,44 @@
                     height="200"
                 />
             </div>
-            <div class="font-bold uppercase text-gray-500 basis-1/4">
+
+            <div class="font-bold uppercase text-gray-500">
                 <span>jacekroszkowiak_dev</span>
             </div>
-            <div class="navbar-container bg-gray-700 h-48 basis-1/4">
-                <nav class="header-navbar">
-                    <h1 class="font-bold uppercase text-gray-500">
-                        Page contents:
-                    </h1>
-                    <ul class="text-red-400">
-                        <li>
-                            <a href="../index.html" target="_parent">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html" target="_parent">About me</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" target="_parent"
-                                >Contact me</a
-                            >
-                        </li>
-                    </ul>
+
+            <div class="flex items-center bg-black h-48 basis-1/4">
+                <nav class="group">
+                    <div>
+                        <img
+                            src="../../resources/img/hamburger menu.png"
+                            width="100"
+                            height="100"
+                        />
+                    </div>
+                    <div
+                        class="hidden group-hover:block group-hover:absolute bg-black w-full h-55 min-h-max ease-in duration-300 p-5"
+                    >
+                        <h1 class="font-bold uppercase text-gray-500">
+                            Page contents:
+                        </h1>
+                        <ul class="text-red-400">
+                            <li class="p-3 hover:bg-gray-200">
+                                <a href="../index.html" target="_parent"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="p-3 hover:bg-gray-200">
+                                <a href="about.html" target="_parent"
+                                    >About me</a
+                                >
+                            </li>
+                            <li class="p-3 hover:bg-gray-200">
+                                <a href="contact.html" target="_parent"
+                                    >Contact me</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
