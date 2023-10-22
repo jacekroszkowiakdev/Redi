@@ -10,57 +10,65 @@
 
         <title>Contact Me</title>
     </head>
-    <body>
-        <div class="page-content-container">
+
+    <body class="min-h-screen flex justify-center">
+        <div class="min-h-screen basis-full">
+            <iframe src="header.html" class="header" width="100%" height="100%">
+            </iframe>
             <main>
-                <iframe src="header.html" class="header"> </iframe>
-
-                <h1>Contact Me</h1>
-
-                <p>
-                    Please enter your name and email and write us your feedback:
-                </p>
                 <form>
-                    <label for="name">Name:</label>
                     <input
+                        class="bg-gray-100 border border-black text-black rounded h-8 basis-1/8"
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="your name"
+                        placeholder="Name"
                         autocomplete="off"
+                        size="20"
                         required
                     />
-                    <br />
-                    <label for="email">Email:</label>
+
                     <input
+                        class="bg-gray-100 border border-black text-black rounded h-8 basis-1/8"
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="your email"
+                        placeholder="Email"
                         autocomplete="off"
+                        size="20"
+                        required
+                    />
+
+                    <input
+                        class="bg-gray-100 border border-black text-black rounded h-8"
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Subject"
+                        autocomplete="off"
+                        size="50"
                         required
                     />
                     <br />
-                    <label for="Feedback">Message:</label><br />
+
                     <textarea
+                        class="bg-gray-100 border border-black text-black rounded"
                         name="feedback"
                         id="feedback"
-                        placeholder=""
+                        placeholder="Message"
                         required
-                        rows="4"
+                        rows="7"
                         cols="50"
                     ></textarea>
                     <br />
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit" class="button" />
                 </form>
-                <p>
-                    Click the "Submit" button and your feedback will be send to
-                    us.
-                </p>
-                <a href="../index.html">Home</a>
-
-                <iframe src="footer.html" class="footer"></iframe>
             </main>
+            <iframe
+                src="footer.html"
+                class="sticky top-[100vh]"
+                width="100%"
+            ></iframe>
         </div>
     </body>
 </html>

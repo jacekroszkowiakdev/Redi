@@ -7,28 +7,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="../output.css" />
         <script type="text/javascript" src="../scripts.js" defer></script>
-
         <title>My Portfolio</title>
     </head>
-    <body>
-        <footer class="bg-black text-center lg:text-left">
+
+    <div class="min-h-screen">
+        <footer class="bg-black text-center lg:text-left sticky top-[100vh]">
             <div class="footer-container">
-                <div class="flex items-center space-x-5 mx-10">
-                    <div>
+                <div
+                    class="flex flex-row items-center justify-center space-x-5 mx-10 h-24"
+                >
+                    <div class="basis-1/4"></div>
+                    <div class="basis-1/2">
                         <img
                             class="relative mx-auto border-4-solid-white rounded-md"
                             src="../../resources/img/jr_dev.png"
-                            width="50"
-                            height="50"
+                            width="80"
+                            height="80"
                         />
                     </div>
+                    <div class="basis-1/4"></div>
                     <a
                         href="https://www.instagram.com/jroszko/"
                         target="_blank"
                         type="button"
-                        class="m-1 h-9 w-9 rounded-full text-gray-600 hover:text-gray-400"
-                        data-te-ripple-init
-                        data-te-ripple-color="light"
+                        class="m-1 h-9 w-9 rounded-full text-gray-600 hover:text-gray-400 basis-1/7"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -45,9 +47,7 @@
                         href="https://github.com/jacekroszkowiakdev"
                         target="_blank"
                         type="button"
-                        class="m-1 h-9 w-9 rounded-full text-gray-600 hover:text-gray-400"
-                        data-te-ripple-init
-                        data-te-ripple-color="light"
+                        class="m-1 h-9 w-9 rounded-full text-gray-600 hover:text-gray-400 basis-1/7"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -64,9 +64,7 @@
                         href="https://www.linkedin.com/in/jacekroszkowiak/"
                         target="_blank"
                         type="button"
-                        class="m-1 h-9 w-9 rounded-full text-gray-600 hover:text-gray-400"
-                        data-te-ripple-init
-                        data-te-ripple-color="light"
+                        class="m-1 h-9 w-9 rounded-full text-gray-600 hover:text-gray-400 basis-1/7"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -79,9 +77,12 @@
                             />
                         </svg>
                     </a>
+                    <div class="basis-1/2"></div>
                 </div>
 
-                <div class="text-gray-500 flex items-center space-x-5 mx-10">
+                <div
+                    class="text-gray-500 flex items-center justify-center space-x-5 mx-15"
+                >
                     <div><span>Copyright© 2023 Jacek Roszkowiak</span></div>
                     <a
                         href="../index.html"
@@ -110,5 +111,5 @@
                 </div>
             </div>
         </footer>
-    </body>
+    </div>
 </html>

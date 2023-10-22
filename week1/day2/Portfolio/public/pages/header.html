@@ -11,27 +11,35 @@
         <title>My Portfolio</title>
     </head>
     <body>
-        <header class="bg-black">
-            <div class="relative mx-auto border-4-solid-white rounded-md">
+        <header class="flex flex-row items-center justify-center bg-black h-50">
+            <div
+                class="relative mx-auto border-4-solid-white rounded-md basis-1/4"
+            >
                 <img
                     src="../../resources/img/jr_dev.png"
-                    width="100"
-                    height="100"
+                    width="200"
+                    height="200"
                 />
             </div>
-            <div class="header-name">jacekroszkowiak_dev</div>
-            <div class="navbar-container">
+            <div class="font-bold uppercase text-gray-500 basis-1/4">
+                <span>jacekroszkowiak_dev</span>
+            </div>
+            <div class="navbar-container bg-gray-700 h-48 basis-1/4">
                 <nav class="header-navbar">
-                    <h1 class="font-bold uppercase">Page contents:</h1>
+                    <h1 class="font-bold uppercase text-gray-500">
+                        Page contents:
+                    </h1>
                     <ul class="text-red-400">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="../index.html" target="_parent">Home</a>
                         </li>
                         <li>
-                            <a href="./pages/about.html">About me</a>
+                            <a href="about.html" target="_parent">About me</a>
                         </li>
                         <li>
-                            <a href="./pages/contact.html">Contact me</a>
+                            <a href="contact.html" target="_parent"
+                                >Contact me</a
+                            >
                         </li>
                     </ul>
                 </nav>

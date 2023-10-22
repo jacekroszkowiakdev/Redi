@@ -1,3 +1,3 @@
-import { Ripple, initTE } from "tw-elements";
+// import { Ripple, initTE } from "tw-elements";
 
-initTE({ Ripple });
+// initTE({ Ripple });
