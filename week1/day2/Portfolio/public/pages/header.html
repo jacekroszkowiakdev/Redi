@@ -12,10 +12,10 @@
     </head>
     <body>
         <header
-            class="flex flex-row items-center justify-center bg-black h-50 relative z-99"
+            class="flex flex-row items-center justify-center bg-black h-50 min-h-max relative z-99"
         >
             <div
-                class="relative mx-auto border-4-solid-white rounded-md basis-1/4"
+                class="relative mx-auto border-2 border-white rounded-md basis-1/4"
             >
                 <img
                     src="../../resources/img/jr_dev.png"
@@ -25,8 +25,8 @@
                 />
             </div>
 
-            <div class="flex items-center bg-black h-48 basis-1/4">
-                <nav class="group z-99">
+            <div class="flex flex-row items-center bg-black h-52 basis-1/4">
+                <nav class="group">
                     <div>
                         <img
                             src="../../resources/img/hamburger menu.png"
@@ -36,7 +36,7 @@
                         />
                     </div>
                     <div
-                        class="hidden group-hover:block group-hover:absolute bg-black w-full h-55 min-h-max ease-in duration-300 p-5"
+                        class="hidden group-hover:absolute group-hover:block bg-black w-full h-52 min-h-max ease-in duration-300 p-5 z-10"
                     >
                         <h1 class="font-bold uppercase text-gray-500">
                             Page contents:
@@ -50,6 +50,18 @@
                             <li class="p-3 hover:bg-gray-200">
                                 <a href="about.html" target="_parent"
                                     >About me</a
+                                >
+                            </li>
+
+                            <li class="p-3 hover:bg-gray-200">
+                                <a href="projects.html" target="_parent"
+                                    >Projects</a
+                                >
+                            </li>
+
+                            <li class="p-3 hover:bg-gray-200">
+                                <a href="../gallery/index.html" target="_parent"
+                                    >Gallery</a
                                 >
                             </li>
                             <li class="p-3 hover:bg-gray-200">
