@@ -12,30 +12,34 @@
     </head>
     <body>
         <header
-            class="flex flex-row items-center justify-center bg-black h-50 min-h-max relative z-99"
+            class="flex flex-row items-center justify-center bg-black min-h-max absolute z-10"
         >
-            <div
-                class="relative mx-auto border-2 border-white rounded-md basis-1/4"
-            >
+            <div id="header-logo" class="relative mx-auto bg-black basis-1/2">
                 <img
                     src="../../resources/img/jr_dev.png"
                     alt="site-logo"
-                    width="200"
-                    height="200"
+                    width="150"
+                    class="relative mx-auto rounded-md bg-black"
                 />
             </div>
 
-            <div class="flex flex-row items-center bg-black h-52 basis-1/4">
-                <nav class="group">
+            <div id="header-middle" class="basis-1/2"></div>
+
+            <div
+                id="hamburger-menu"
+                class="flex flex-row items-center border-2 border-red bg-black basis-1/4"
+            >
+                <nav class="group h-fit my-16">
                     <div>
                         <img
                             src="../../resources/img/hamburger menu.png"
                             alt="hamburger-menu"
-                            width="100"
+                            width="80"
                             height="100"
                         />
                     </div>
                     <div
+                        id="drop-down-menu"
                         class="hidden group-hover:absolute group-hover:block bg-black w-full h-52 min-h-max ease-in duration-300 p-5 z-10"
                     >
                         <h1 class="font-bold uppercase text-gray-500">
