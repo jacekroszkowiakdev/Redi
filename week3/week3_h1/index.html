@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parcel Sandbox</title>
+        <meta charset="UTF-8" />
+        <script
+            src="https://kit.fontawesome.com/5ddbf505fe.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <div id="app"></div>
+        <div class="card-container">
+            <h1>Questionnaire:</h1>
+            <div class="fa-container">
+                <i class="fa-solid fa-code fa-flip fa-5x"></i>
+            </div>
+
+            <p>
+                You will be asked some questions about learning programming
+                languages. To submit you will be asked to provide your name and
+                email:
+            </p>
+            <form>
+                <div class="questions-checkbox">
+                    <h2>
+                        Please select all the methods and learning materials you
+                        use while learning programming:
+                    </h2>
+                    <ul>
+                        <li>
+                            <input
+                                type="checkbox"
+                                id="youtube videos"
+                                name="method1"
+                                value="youtube"
+                            />
+                            <label for="vehicle1"> youtube tutorials </label
+                            ><br />
+                        </li>
+                        <li>
+                            <input
+                                type="checkbox"
+                                id="free online schools"
+                                name="method2"
+                                value="free-online"
+                            />
+                            <label for="vehicle2"
+                                >I'm using an free online school / tutorial
+                                platform</label
+                            ><br />
+                        </li>
+                        <li>
+                            <input
+                                type="checkbox"
+                                id="paid online schools/tutorials"
+                                name="method3"
+                                value="paid-online"
+                            />
+                            <label for="vehicle3">
+                                I'm subscribed to a paid online school/tutorials
+                                platform</label
+                            >
+                        </li>
+                        <li>
+                            <input
+                                type="checkbox"
+                                id="hackatons"
+                                name="method4"
+                                value="hackatons"
+                            />
+                            <label for="vehicle3">
+                                I'm going to hackatons and coding events</label
+                            >
+                        </li>
+                        <li>
+                            <input
+                                type="checkbox"
+                                id="mentor"
+                                name="method4"
+                                value="has-mentor"
+                            />
+                            <label for="vehicle3">
+                                I am learning with a mentor</label
+                            >
+                        </li>
+                        <li>
+                            <input
+                                type="checkbox"
+                                id="books"
+                                name="method4"
+                                value="reads-books"
+                            />
+                            <label for="vehicle3">
+                                I'm reading programming books</label
+                            >
+                        </li>
+                        <li>
+                            <input
+                                type="checkbox"
+                                id="all"
+                                name="method4"
+                                value="uses-all"
+                            />
+                            <label for="vehicle3"> All the above</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="question-open">
+                    <label for="Feedback"
+                        >Any other methods not listed above? If so, please write
+                        below:</label
+                    ><br />
+                    <textarea
+                        name="feedback"
+                        id="feedback"
+                        placeholder="Your answer..."
+                        rows="6"
+                        cols="65"
+                    ></textarea>
+                    <br />
+                    <label for="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="your name"
+                        autocomplete="off"
+                        required
+                    />
+                    <br />
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="your email"
+                        autocomplete="off"
+                        required
+                    />
+                    <br />
+
+                    <input
+                        id="sumbit-button"
+                        type="submit"
+                        value="Submit"
+                        class="submit-btn"
+                    />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
