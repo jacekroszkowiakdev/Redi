@@ -55,6 +55,27 @@ html {
     /* 6 */
 }
 
+#pagination-button {
+    display: inline-block;
+    width: 20px;
+    border: 1px solid black;
+    height: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+#pagination-button:hover {
+    color: black;
+    background-color: rgb(226, 226, 226);
+}
+
+#pagination-button.active {
+    color: black;
+    background-color: rgb(226, 226, 226);
+}
+
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
