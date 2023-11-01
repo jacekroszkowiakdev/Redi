@@ -34,93 +34,112 @@
                 <div class="product-card-container">
                     <!--Bootstrap Carousel component-->
                     <div
-                        id="carouselExampleIndicators"
-                        class="carousel slide"
-                        data-bs-ride="carousel"
+                        id="carousel-wrapper"
+                        class="w-4/5 absolute overflow-hidden"
                     >
-                        <div class="carousel-indicators">
-                            <button
-                                type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="0"
-                                class="active"
-                                aria-current="true"
-                                aria-label="Slide 1"
-                            ></button>
-                            <button
-                                type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="1"
-                                aria-label="Slide 2"
-                            ></button>
-                            <button
-                                type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="2"
-                                aria-label="Slide 3"
-                            ></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img
-                                    src="https://fastly.picsum.photos/id/439/600/400.jpg?hmac=ADXTTJQsQxPUCwWNHgVEZPzyXLURYxzFc6QIrixpV8E"
-                                    class="d-block w-100"
-                                    alt="carousel-picture"
-                                />
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="https://fastly.picsum.photos/id/998/600/400.jpg?hmac=WSpulgHbPkI--NfRvzZ_j14ie9vTF_dKquO5Wn6Fqo4"
-                                    class="d-block w-100"
-                                    alt="carousel-picture"
-                                />
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="https://fastly.picsum.photos/id/776/600/400.jpg?hmac=0XG-_4lX7ArCx6MVYltN3Fmwx7OORuNpktDmEPXwUfk"
-                                    class="d-block w-100"
-                                    alt="carousel-picture"
-                                />
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="https://fastly.picsum.photos/id/568/600/400.jpg?hmac=AC6_PWP-eHtGmBwHnwlj8RTFzHuCK3EWYYFcVAuSxwk"
-                                    class="d-block w-100"
-                                    alt="carousel-picture"
-                                />
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="https://fastly.picsum.photos/id/61/600/400.jpg?hmac=XZhafTXVEqP5sXhZWM9lUSyWuRS3J0kri_of6fW2Ffo"
-                                    class="d-block w-100"
-                                    alt="carousel-picture"
-                                />
-                            </div>
-                        </div>
-                        <button
-                            class="carousel-control-prev"
-                            type="button"
-                            data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev"
+                        <div
+                            id="carouselExampleIndicators"
+                            class="carousel slide w-4/5 mx-0 p-0 relative"
+                            data-bs-ride="carousel"
                         >
-                            <span
-                                class="carousel-control-prev-icon"
-                                aria-hidden="true"
-                            ></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                            class="carousel-control-next"
-                            type="button"
-                            data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next"
-                        >
-                            <span
-                                class="carousel-control-next-icon"
-                                aria-hidden="true"
-                            ></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                            <div class="carousel-indicators">
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="1"
+                                    aria-label="Slide 2"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="2"
+                                    aria-label="Slide 3"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="3"
+                                    aria-label="Slide 4"
+                                ></button>
+                                <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="4"
+                                    aria-label="Slide 5"
+                                ></button>
+                            </div>
+                            <div class="carousel-inner overflow-hidden">
+                                <div
+                                    class="carousel-item active overflow-hidden"
+                                >
+                                    <img
+                                        src="https://fastly.picsum.photos/id/439/600/400.jpg?hmac=ADXTTJQsQxPUCwWNHgVEZPzyXLURYxzFc6QIrixpV8E"
+                                        class="d-block border rounded mx-0 p-0"
+                                        alt="carousel-picture"
+                                    />
+                                </div>
+                                <div class="carousel-item overflow-hidden">
+                                    <img
+                                        src="https://fastly.picsum.photos/id/998/600/400.jpg?hmac=WSpulgHbPkI--NfRvzZ_j14ie9vTF_dKquO5Wn6Fqo4"
+                                        class="d-block border rounded mx-0 p-0"
+                                        alt="carousel-picture"
+                                    />
+                                </div>
+                                <div class="carousel-item overflow-hidden">
+                                    <img
+                                        src="https://fastly.picsum.photos/id/776/600/400.jpg?hmac=0XG-_4lX7ArCx6MVYltN3Fmwx7OORuNpktDmEPXwUfk"
+                                        class="d-block border rounded mx-0 p-0"
+                                        alt="carousel-picture"
+                                    />
+                                </div>
+                                <div class="carousel-item overflow-hidden">
+                                    <img
+                                        src="https://fastly.picsum.photos/id/568/600/400.jpg?hmac=AC6_PWP-eHtGmBwHnwlj8RTFzHuCK3EWYYFcVAuSxwk"
+                                        class="d-block border rounded mx-0 p-0"
+                                        alt="carousel-picture"
+                                    />
+                                </div>
+                                <div class="carousel-item overflow-hidden">
+                                    <img
+                                        src="https://fastly.picsum.photos/id/61/600/400.jpg?hmac=XZhafTXVEqP5sXhZWM9lUSyWuRS3J0kri_of6fW2Ffo"
+                                        class="d-block border rounded mx-0 p-0"
+                                        alt="carousel-picture"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
 
                     <!-- <div class="gallery-container">
