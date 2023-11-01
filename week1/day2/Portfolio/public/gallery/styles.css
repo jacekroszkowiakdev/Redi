@@ -42,17 +42,19 @@ main {
     margin: 10px;
 }
 
-.carousel-wrapper,
 .carousel-inner {
-    width: 100%;
+    width: 75%;
     object-fit: contain;
     margin: 0 100px 0 100px;
+    overflow: hidden;
 }
 
-button {
-    color: black;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(199, 196, 196);
+    border-radius: 30px;
+    margin: 0;
 }
-
 .product-info-container {
     order: 2;
     margin: 20px;
