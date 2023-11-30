@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./App.css";
 import { Home } from "./components/Home.component";
 import { Login } from "./components/Login.component";
@@ -9,14 +9,21 @@ import {
     Route,
     Link,
     Navigate,
+    useNavigate,
 } from "react-router-dom";
 import { useState } from "react";
 
-function App() {
-    const [isLoggedIn, setLoggedIn] = useState(false);
-    const [user, setUser] = useState(null);
+interface UserData {
+    email: string;
+    userName: string;
+}
 
-    const handleLogin = (email, password) => {
+function App() {
+    const [isLoggedIn, setLoggedIn] = useState<boolean>(false);
+    const [user, setUser] = useState<UserData | null>(null);
+    const navigateTo = useNavigate();
+
+    const handleLogin = (email: string, password: string) => {
         if (email === "example@example.com" && password === "password") {
             setLoggedIn(true);
             setUser({ email: "email@example.com", userName: "user" });
@@ -41,16 +48,16 @@ function App() {
                     </ul>
                 </nav>
                 <Routes>
-                    <Route exact path="/">
+                    <Route path="/">
                         {isLoggedIn ? (
-                            <Navigate="/dashboard" />
+                            <Navigate to="/dashboard" />
                         ) : (
                             <Home onLogin={handleLogin} />
                         )}
                     </Route>
                     <Route path="/login">
                         {isLoggedIn ? (
-                            <Navigate="/dashboard" />
+                            <Navigate to="/dashboard" />
                         ) : (
                             <Login onLogin={handleLogin} />
                         )}
@@ -59,7 +66,7 @@ function App() {
                         {isLoggedIn ? (
                             <Dashboard onLogout={handleLogout} />
                         ) : (
-                            <Navigate="/" />
+                            <Navigate to="/" />
                         )}
                     </Route>
                 </Routes>

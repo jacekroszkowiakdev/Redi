@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ReactEventHandler, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 interface LoginEmail {
@@ -11,16 +11,16 @@ export const Login: React.FC = ({ loggedIn, handleLogin }) => {
     const [password, setPassword] = useState("");
     const navigateTo = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.SyntheticEvent) => {
         e.preventDefault(); // Prevents the default form submission behavior
-    };
-    const userIsLoggedIn = handleLogin(email, password);
+        const userIsLoggedIn = handleLogin(email, password);
 
-    if (userIsLoggedIn) {
-        setEmail("");
-        setPassword("");
-        navigateTo("/dashboard");
-    }
+        if (userIsLoggedIn) {
+            setEmail("");
+            setPassword("");
+            navigateTo("/dashboard");
+        }
+    };
 
     return (
         <>
