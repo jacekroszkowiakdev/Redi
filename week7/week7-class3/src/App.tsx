@@ -20,13 +20,22 @@ interface UserData {
 
 function App() {
     const [isLoggedIn, setLoggedIn] = useState<boolean>(false);
-    const [user, setUser] = useState<UserData | null>(null);
+    const [userName, setUser] = useState<UserData | null>(null);
     const navigateTo = useNavigate();
 
     const handleLogin = (email: string, password: string) => {
         if (email === "example@example.com" && password === "password") {
             setLoggedIn(true);
             setUser({ email: "email@example.com", userName: "user" });
+            return true;
+        }
+        return false;
+    };
+
+    const handleLogout = (email: string, password: string) => {
+        if (email === "example@example.com" && password === "password") {
+            setLoggedIn(false);
+            setUser({ email: "", userName: "" });
             return true;
         }
         return false;
@@ -64,7 +73,10 @@ function App() {
                     </Route>
                     <Route path="/dashboard">
                         {isLoggedIn ? (
-                            <Dashboard onLogout={handleLogout} />
+                            <Dashboard
+                                onLogout={handleLogout}
+                                user={userName}
+                            />
                         ) : (
                             <Navigate to="/" />
                         )}
