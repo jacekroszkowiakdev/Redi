@@ -1,12 +1,8 @@
-import React, { ReactEventHandler, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { LoginProps } from "../model/model";
 
-interface LoginEmail {
-    email: string;
-    password: string;
-}
-
-export const Login: React.FC = ({ loggedIn, handleLogin }) => {
+export const Login: React.FC<LoginProps> = (loggedIn, handleLogin) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigateTo = useNavigate();

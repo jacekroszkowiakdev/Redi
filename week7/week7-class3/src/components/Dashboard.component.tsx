@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import { DashboardProps } from "../model/model";
 
-export const Dashboard: React.FC = ({ user }) => {
-    const handleLogOut = () => {};
+type Props = DashboardProps;
 
+export const Dashboard: React.FC<Props> = (handleLogout) => {
     return (
         <>
-            <h1>Welcome {user}</h1>
-            <button onClick={handleLogOut}>Log Out</button>
+            <button onClick={() => handleLogout}>Log Out</button>
         </>
     );
 };
